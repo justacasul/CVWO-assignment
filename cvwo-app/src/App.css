@@ -33,6 +33,13 @@ li.task:hover .deleteTaskBtn {
 
 .create {
   color: black;
+  padding: 0px;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+.genericView {
+  color: black;
   padding: 5px;
   text-align: center;
   font-family: Tahoma, sans-serif;
@@ -41,11 +48,17 @@ li.task:hover .deleteTaskBtn {
 .listWrapper {
   position: absolute;
   bottom: 50px;
-  top: 160px;
+  top: 260px;
   right: 0;
   left: 0;
   overflow: auto;
 }
+
+.taskDue {
+  float: right;
+  color: grey;
+}
+
 
 .deleteTaskBtn {
   float: right;
@@ -60,5 +73,5 @@ li.task:hover .deleteTaskBtn {
   opacity: 0;
   line-height: 0;
   margin-right: 5px;
-  cursor: default;
+  cursor: pointer;
 }

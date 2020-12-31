@@ -1,29 +1,43 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Link} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import './App.css';
-import TasksContainer from './components/TasksContainer'
+import TaskPage from "./components/TaskPage";
+import CategoryPage from "./components/CategoryPage";
+import CategoriesPage from "./components/CategoriesPage";
+import TasksPage from "./components/TasksPage";
+import NewTask from "./components/NewTask";
 
 class App extends Component {
-  render() {
+
+
+  render(routes) {
+      const PageNotFound = () =>(
+          <div>
+              <h1>
+                  404, this page does not exist
+              </h1>
+          </div>
+      );
+
     return (
-        <div className="container">
-          <div className="header">
-            <h1>Todos List</h1>
-          </div>
-
-          <div className="create">
-              <h2>
-                  <BrowserRouter>
-                    {/*  edit link later*/}
-                    <Link to="/Tasks/">New Todo</Link>
-                  </BrowserRouter>
-              </h2>
-          </div>
-
-          <TasksContainer />
-        </div>
+        <BrowserRouter>
+            <div>
+                <Switch>
+                    <Route path="/" component={TasksPage} exact = {true}/>
+                    <Route path="/Tasks" component={TasksPage} exact = {true}/>
+                    <Route path="/Tasks/new" component={NewTask} exact = {true}/>
+                    <Route path="/Tasks/:id" component={TaskPage} exact = {true}/>
+                    <Route path="/Categories" component={CategoriesPage} exact = {true}/>
+                    <Route path="/Categories/:id" component={CategoryPage} exact = {true}/>
+                    <Route component={PageNotFound}/>
+                </Switch>
+            </div>
+        </BrowserRouter>
     );
   }
 }
+
+
+
 
 export default App;
