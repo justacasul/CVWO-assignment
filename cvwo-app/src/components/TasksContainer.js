@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import update from 'immutability-helper'
-import {BrowserRouter, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
+import {formatDate} from "./FormatDateFunction";
 
 class TasksContainer extends Component {
 
@@ -28,15 +29,7 @@ class TasksContainer extends Component {
         this.getTasks()
     }
 
-    formatDate = (date) => {
-        const recreatedDate = new Date(date)
-        const day = recreatedDate.getDate();
-        const month = recreatedDate.getMonth() + 1;
-        const year = recreatedDate.getFullYear();
-        const hour = recreatedDate.getHours();
-        const minute = recreatedDate.getMinutes();
-        return day + "/" + month + "/" + year + " " + hour + ":" + minute;
-    }
+
 
     // wow this really wasted 2-3 hours of my time because of
     // I didn't have
@@ -55,23 +48,21 @@ class TasksContainer extends Component {
             .catch(error => console.log(error))
     }
 
+
+
     render() {
         return (
             <div>
-
                 <div className="listWrapper">
                     <ol className="taskList">
                         {this.state.tasks.map((task) => {
                             return(
                                 <li className="task" task={task} key={task.id}>
                                     <label className="taskLabel">
-                                        <BrowserRouter>
-                                            <Link to="/Tasks/:id">{task.name}</Link>
-                                        </BrowserRouter>
+                                        <Link to={`/Tasks/${task.id}`}>{task.name}</Link>
                                     </label>
-                                    <button className="deleteTaskBtn"
+                                    <button className="deleteBtn"
                                           onClick={(e) =>
-                                              // console.log(task.id)
                                               this.deleteTask(task.id)
                                           }>
                                       delete
@@ -79,7 +70,7 @@ class TasksContainer extends Component {
 
                                     {/* float order*/}
                                     <span className="taskDue">
-                                        Due {this.formatDate(task.due)}
+                                        Due {formatDate(task.due)}
                                     </span>
                                 </li>
                             )

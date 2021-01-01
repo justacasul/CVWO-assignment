@@ -21,6 +21,11 @@ class TasksController < ApplicationController
     head :no_content, status: :ok
   end
 
+  def show
+    task = Task.find(params[:id])
+    render json: task
+  end
+
   private
     def task_param
       params.require(:task).permit(:name, :detail, :due)

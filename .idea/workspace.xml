@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0d67a4-e0a5-446d-891c-d1d33b56942f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/FormatDateFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/TasksLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paste this in shell.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acknowledgements.md" beforeDir="false" afterPath="$PROJECT_DIR$/acknowledgements.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvwo-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvwo-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/NewTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/NewTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TasksContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TasksContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TasksPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TasksPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +32,15 @@
     <setting file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1m0SexUhzVCVtjZ6ujLKjzSBmek" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -54,7 +62,8 @@
       <workItem from="1609163386673" duration="5072000" />
       <workItem from="1609241503714" duration="2099000" />
       <workItem from="1609406154773" duration="253000" />
-      <workItem from="1609406760144" duration="15989000" />
+      <workItem from="1609406760144" duration="16020000" />
+      <workItem from="1609506738446" duration="6099000" />
     </task>
     <servers />
   </component>
@@ -72,5 +81,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

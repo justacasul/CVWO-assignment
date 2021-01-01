@@ -1,5 +1,6 @@
-import {BrowserRouter, Link} from "react-router-dom";
 import React, {Component} from "react";
+import TasksLink from "./TasksLink";
+import CategoriesContainer from "./CategoriesContainer";
 
 class CategoriesPage extends Component {
 
@@ -10,13 +11,9 @@ class CategoriesPage extends Component {
                     <h1>Categories List</h1>
                 </div>
 
-                <div className="genericView">
-                    <h2>
-                        <Link to="/Tasks">View Tasks</Link>
-                    </h2>
-                </div>
+                <TasksLink />
 
-                {/*    add all categories here    */}
+                <CategoriesContainer />
 
             </div>
         )

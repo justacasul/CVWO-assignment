@@ -3,6 +3,10 @@ ol.taskList {
   padding: 0 25px;
 }
 
+ul.categoryList {
+  padding: 0 25px;
+}
+
 li.task {
   list-style-type: none;
   font-family: Tahoma, sans-serif;
@@ -11,7 +15,7 @@ li.task {
   border-bottom: 1px solid #ccc;
 }
 
-li.task:hover .deleteTaskBtn {
+li.task:hover .deleteBtn {
   visibility: visible;
   opacity: 1;
 }
@@ -60,7 +64,7 @@ li.task:hover .deleteTaskBtn {
 }
 
 
-.deleteTaskBtn {
+.deleteBtn {
   float: right;
   color: red;
   background: rgba(0,0,0,0);
@@ -75,3 +79,18 @@ li.task:hover .deleteTaskBtn {
   margin-right: 5px;
   cursor: pointer;
 }
+
+.horizontalCenterDeleteBtn {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: red;
+  background: rgba(0,0,0,0);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
