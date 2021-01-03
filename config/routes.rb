@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   scope '/' do
     resources :tasks
-    # resources :categories
+    resources :categories
   end
 end

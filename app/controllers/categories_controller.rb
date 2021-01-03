@@ -15,6 +15,11 @@ class CategoriesController < ApplicationController
     render json: category
   end
 
+  def show
+    category = Category.find(params[:id])
+    render json: category
+  end
+
   def destroy
     category = Category.find(params[:id])
     category.destroy

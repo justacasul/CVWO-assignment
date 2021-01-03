@@ -15,7 +15,20 @@ li.task {
   border-bottom: 1px solid #ccc;
 }
 
+li.category {
+  list-style-type: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.2em;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
 li.task:hover .deleteBtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+li.category:hover .deleteBtn {
   visibility: visible;
   opacity: 1;
 }
@@ -50,11 +63,7 @@ li.task:hover .deleteBtn {
 }
 
 .listWrapper {
-  position: absolute;
-  bottom: 50px;
-  top: 260px;
-  right: 0;
-  left: 0;
+  position: relative;
   overflow: auto;
 }
 

@@ -16,7 +16,7 @@ class CategoriesContainer extends Component {
 
     // use axios to get all categories
     getCategories() {
-        axios.get('/categoriess')
+        axios.get('/categories')
             .then(response => {
                 this.setState({categories: response.data})
             })
@@ -45,20 +45,16 @@ class CategoriesContainer extends Component {
     render() {
         return (
             <div>
-
                 <div className="listWrapper">
                     <ul className="categoryList">
                         {this.state.categories.map((category) => {
                             return(
                                 <li className="category" category={category} key={category.id}>
                                     <label className="categoryLabel">
-                                        <BrowserRouter>
-                                            <Link to="/Categories/:id">{category.name}</Link>
-                                        </BrowserRouter>
+                                        <Link to={`/categories/${category.id}`}>{category.name}</Link>
                                     </label>
                                     <button className="deleteBtn"
                                             onClick={(e) =>
-                                                // console.log(task.id)
                                                 this.deleteCategory(category.id)
                                             }>
                                         delete
