@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import update from 'immutability-helper'
-import {BrowserRouter, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class CategoriesContainer extends Component {
 

@@ -6,3 +6,4 @@ https://www.codingame.com/playgrounds/6517/react-router-tutorial
 https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
 https://www.w3schools.com/howto/howto_css_center_button.asp
 https://stackoverflow.com/questions/50793148/how-to-redirect-to-a-new-page-from-a-function-in-react
+https://stackoverflow.com/questions/5484560/javascript-if-else-statement-to-hide-and-show-div

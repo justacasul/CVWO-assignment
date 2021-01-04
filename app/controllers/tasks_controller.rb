@@ -1,6 +1,11 @@
 class TasksController < ApplicationController
   def index
-    tasks = Task.order("due DESC")
+    if params[:category_id]
+      tasks = Task.includes(:categories).where(categories: {id: params[:category_id]})
+      tasks.order("due DESC")
+    else
+      tasks = Task.order("due DESC")
+    end
     render json: tasks
   end
 

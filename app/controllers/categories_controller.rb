@@ -1,6 +1,11 @@
 class CategoriesController < ApplicationController
   def index
-    categories = Category.all
+    categories =
+      if params[:task_id]
+        Category.includes(:tasks).where(tasks: { id: params[:task_id] })
+      else
+        Category.all
+      end
     render json: categories
   end
 

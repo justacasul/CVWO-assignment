@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0d67a4-e0a5-446d-891c-d1d33b56942f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/acknowledgements.md" beforeDir="false" afterPath="$PROJECT_DIR$/acknowledgements.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/task.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/task.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20201228145830_create_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201228145830_create_categories.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TasksPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TasksPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +58,7 @@
       <workItem from="1609406760144" duration="16020000" />
       <workItem from="1609506738446" duration="6099000" />
       <workItem from="1609652805306" duration="2223000" />
+      <workItem from="1609738736414" duration="9057000" />
     </task>
     <servers />
   </component>

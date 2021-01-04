@@ -15,7 +15,7 @@ class TasksPage extends Component {
 
                 <div className="create">
                     <h3>
-                        <Link to="/Tasks/new">New Todo</Link>
+                        <Link to="/Tasks/new">New Task</Link>
                     </h3>
                 </div>
 
