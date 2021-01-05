@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0d67a4-e0a5-446d-891c-d1d33b56942f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" afterDir="false" />
     </list>
@@ -20,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cvwo-app/node_modules/bootstrap/dist/css/bootstrap.min.css" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1m0SexUhzVCVtjZ6ujLKjzSBmek" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -34,10 +36,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -56,7 +60,7 @@
       <workItem from="1609506738446" duration="6099000" />
       <workItem from="1609652805306" duration="2223000" />
       <workItem from="1609738736414" duration="9057000" />
-      <workItem from="1609827182347" duration="3512000" />
+      <workItem from="1609827182347" duration="10760000" />
     </task>
     <servers />
   </component>

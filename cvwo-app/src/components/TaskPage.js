@@ -5,6 +5,7 @@ import TasksLink from "./TasksLink";
 import {Link} from "react-router-dom";
 import CategoriesLink from "./CategoriesLink";
 import update from 'immutability-helper'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 class TaskPage extends Component {
 
@@ -12,7 +13,8 @@ class TaskPage extends Component {
         super(props);
         this.state = {
             task: {},
-            categories: []
+            categories: [],
+            allCategories: []
         };
     }
 
@@ -37,6 +39,15 @@ class TaskPage extends Component {
             .catch(error => console.log(error))
     }
 
+    getAllCategories() {
+        const id = this.props.match.params.id;
+        axios.get('/categories/')
+            .then(response => {
+                this.setState({allCategories: response.data})
+            })
+            .catch(error => console.log(error))
+    }
+
     setCategoriesMessage() {
         if(this.state.categories.length===0) {
             document.getElementById('has-categories').style.display = 'none';
@@ -51,6 +62,7 @@ class TaskPage extends Component {
     componentDidMount() {
         this.getTask()
         this.getCategories()
+        this.getAllCategories()
     }
 
     deleteTask = () => {
@@ -124,9 +136,36 @@ class TaskPage extends Component {
                 </div>
 
                 {/* TODO: option to add category*/}
-                {/*<Dropdown className='genericView'>*/}
-                {/*    hello*/}
-                {/*</Dropdown>*/}
+                <Dropdown className="genericView">
+                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            Add an existing category to the task
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                        {this.state.allCategories
+                            .filter(
+                                ( presentCategory ) => this.state.categories.findIndex(
+                                    x => x.id === presentCategory.id) < 0
+                            ).map(
+                                (remainingCategory) => {
+                                    return(
+                                        <Dropdown.Item
+                                            onClick={(e) =>
+                                                axios.put(
+                                                    `/tasks/${this.state.task.id}/categories/${remainingCategory.id}`)
+                                                    .then(() =>
+                                                        this.getCategories()
+                                                    )
+                                            }
+                                            // className="dropdownCategory"
+                                            // category={remainingCategory}
+                                            // key={remainingCategory.id}
+                                        >
+                                            {remainingCategory.name}
+                                        </Dropdown.Item>
+                            )})}
+                    </Dropdown.Menu>
+                </Dropdown>
 
                 <div className="create">
                     <h3>

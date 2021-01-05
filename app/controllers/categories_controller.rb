@@ -16,8 +16,14 @@ class CategoriesController < ApplicationController
 
   def update
     category = Category.find(params[:id])
-    category.update_attributes(category_param)
-    render json: category
+    if params[:task_id]
+      task = Task.find(params[:task_id])
+      task.categories << category
+      head :no_content, status: :ok
+    else
+      category.update_attributes(category_param)
+      render json: category
+    end
   end
 
   def show
