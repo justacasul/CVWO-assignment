@@ -27,7 +27,12 @@ class CategoriesController < ApplicationController
 
   def destroy
     category = Category.find(params[:id])
-    category.destroy
+    if params[:task_id]
+      task = Task.find(params[:task_id])
+      task.categories.delete(category)
+    else
+      category.destroy
+    end
     head :no_content, status: :ok
   end
 

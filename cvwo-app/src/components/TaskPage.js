@@ -4,6 +4,7 @@ import {formatDate} from "./FormatDateFunction";
 import TasksLink from "./TasksLink";
 import {Link} from "react-router-dom";
 import CategoriesLink from "./CategoriesLink";
+import update from 'immutability-helper'
 
 class TaskPage extends Component {
 
@@ -17,13 +18,17 @@ class TaskPage extends Component {
 
     // use axios to get all tasks
     getTask() {
-        var id = this.props.match.params.id;
+        const id = this.props.match.params.id;
         axios.get('/tasks/' + id)
             .then(response => {
                 this.setState({task: response.data})
             })
             .catch(error => console.log(error))
 
+    }
+
+    getCategories() {
+        const id = this.props.match.params.id;
         axios.get('/tasks/' + id + '/categories/')
             .then(response => {
                 this.setState({categories: response.data})
@@ -35,18 +40,21 @@ class TaskPage extends Component {
     setCategoriesMessage() {
         if(this.state.categories.length===0) {
             document.getElementById('has-categories').style.display = 'none';
+            document.getElementById('no-categories').style.display = '';
         } else {
             document.getElementById('no-categories').style.display = 'none';
+            document.getElementById('has-categories').style.display = '';
         }
     }
 
     // automatically get all tasks
     componentDidMount() {
         this.getTask()
+        this.getCategories()
     }
 
-    deleteTask = (id) => {
-        axios.delete(`/tasks/${id}`)
+    deleteTask = () => {
+        axios.delete(`/tasks/${this.state.task.id}`)
             .then(response => {
                 this.props.history.push('/');
             })
@@ -80,15 +88,31 @@ class TaskPage extends Component {
                         <ul className="categoryList">
                             {this.state.categories.map((category) => {
                                 return(
-                                    <li className="category" category={category} key={category.id}>
+                                    <li className="miniCategory" category={category} key={category.id}>
                                         <label className="categoryLabel">
                                             <Link to={`/categories/${category.id}`}>{category.name}</Link>
                                         </label>
                                         <button className="deleteBtn"
-                                                // TODO update by removing category from task
-                                                // onClick={(e) =>
-                                                //     this.deleteCategory(category.id)
-                                                // }
+                                                onClick={(e) =>
+                                                    axios.delete(
+                                                        `/tasks/${this.state.task.id}/categories/${category.id}`)
+                                                        .then(
+                                                            // this should be better because it doesn't
+                                                            // try to get all categories again
+                                                            () => {
+                                                            const categoryIndex =
+                                                                this.state.categories.findIndex(
+                                                                    x => x.id === category.id)
+                                                            const categories = update(this.state.categories, {
+                                                                $splice: [[categoryIndex, 1]]
+                                                            })
+                                                            this.setState({
+                                                                categories: categories
+                                                            })
+                                                            this.setCategoriesMessage()
+                                                        })
+                                                        .catch(error => console.log(error))
+                                                }
                                         >
                                             remove category from task
                                         </button>
@@ -100,7 +124,9 @@ class TaskPage extends Component {
                 </div>
 
                 {/* TODO: option to add category*/}
-
+                {/*<Dropdown className='genericView'>*/}
+                {/*    hello*/}
+                {/*</Dropdown>*/}
 
                 <div className="create">
                     <h3>
@@ -112,7 +138,7 @@ class TaskPage extends Component {
                 <div>
                     <button className="horizontalCenterDeleteBtn"
                             onClick={(e) =>
-                                this.deleteTask(this.state.task.id)
+                                this.deleteTask()
                             }>
                         delete task
                     </button>

@@ -23,12 +23,23 @@ li.category {
   border-bottom: 1px solid #ccc;
 }
 
+li.miniCategory {
+  list-style-type: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.2em;
+}
+
 li.task:hover .deleteBtn {
   visibility: visible;
   opacity: 1;
 }
 
 li.category:hover .deleteBtn {
+  visibility: visible;
+  opacity: 1;
+}
+
+li.miniCategory:hover .deleteBtn {
   visibility: visible;
   opacity: 1;
 }
