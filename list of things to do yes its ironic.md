@@ -6,11 +6,13 @@ Categories main page
 
 Individual category page with all the tasks 
 
-# Not done:
-
 Figure out how to add drop-downs
 
-Individual task detail page
+
+# Not done:
+
+Individual task detail page (missing new category input bar)
 
 New task page
 
+New category page
