@@ -40,7 +40,6 @@ class TaskPage extends Component {
     }
 
     getAllCategories() {
-        const id = this.props.match.params.id;
         axios.get('/categories/')
             .then(response => {
                 this.setState({allCategories: response.data})
@@ -67,7 +66,7 @@ class TaskPage extends Component {
 
     deleteTask = () => {
         axios.delete(`/tasks/${this.state.task.id}`)
-            .then(response => {
+            .then(() => {
                 this.props.history.push('/');
             })
             .catch(error => console.log(error))

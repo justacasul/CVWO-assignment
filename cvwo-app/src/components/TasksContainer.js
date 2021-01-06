@@ -69,9 +69,13 @@ class TasksContainer extends Component {
                                     </button>
 
                                     {/* float order*/}
-                                    <span className="taskDue">
-                                        Due {formatDate(task.due)}
-                                    </span>
+                                    {task.due ?
+                                        <span className="taskDue">
+                                            Due {formatDate(task.due)}
+                                        </span>
+                                        :
+                                        <span></span>
+                                    }
                                 </li>
                             )
                         })}

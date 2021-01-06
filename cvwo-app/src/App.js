@@ -13,7 +13,7 @@ class App extends Component {
   render(routes) {
       const PageNotFound = () =>(
           <div>
-              <h1>
+              <h1 className="genericView">
                   404, this page does not exist
               </h1>
           </div>
@@ -26,8 +26,10 @@ class App extends Component {
                     <Route path="/" component={TasksPage} exact = {true}/>
                     <Route path="/Tasks" component={TasksPage} exact = {true}/>
                     <Route path="/Tasks/new" component={NewTask} exact = {true}/>
+                    <Route path="/Tasks/null" component={PageNotFound} exact = {true}/>
                     <Route path="/Tasks/:id" component={TaskPage} exact = {true}/>
                     <Route path="/Categories" component={CategoriesPage} exact = {true}/>
+                    <Route path="/Categories/null" component={PageNotFound} exact = {true}/>
                     <Route path="/Categories/:id" component={CategoryPage} exact = {true}/>
                     <Route component={PageNotFound}/>
                 </Switch>

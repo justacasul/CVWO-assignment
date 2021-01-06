@@ -216,6 +216,27 @@ li.miniCategory:hover .deleteBtn {
   border-radius: 0.25rem;
 }
 
+.taskName {
+  width: 20rem;
+}
+
+.taskDetail {
+  /* why is textarea default font different from input default*/
+  font-family: Arial, serif;
+  width: 20rem;
+  height: 12rem;
+  text-align: left;
+  word-wrap: anywhere;
+  vertical-align: top;
+}
+
+.dueDate {
+  width: 4rem;
+}
+
+.dueTime {
+  width: 3rem;
+}
 
 
 
