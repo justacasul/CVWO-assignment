@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0d67a4-e0a5-446d-891c-d1d33b56942f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoryForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/MiniCategoryForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvwo-app/src/components/PageNotFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CVWO-assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CVWO-assignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/task.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/task.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/FormatDateFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/FormatDateFunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoriesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/CategoryPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/NewTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/NewTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TaskForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TaskForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TaskPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvwo-app/src/components/TasksContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/cvwo-app/src/components/TasksContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list of things to do yes its ironic.md" beforeDir="false" afterPath="$PROJECT_DIR$/list of things to do yes its ironic.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,7 @@
       <workItem from="1609738736414" duration="9057000" />
       <workItem from="1609827182347" duration="10760000" />
       <workItem from="1609923447360" duration="7997000" />
+      <workItem from="1610013667828" duration="9301000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,10 @@ class CategoriesController < ApplicationController
 
   def create
     category = Category.create(category_param)
+    if params[:task_id]
+      task = Task.find(params[:task_id])
+      task.categories << category
+    end
     render json: category
   end
 

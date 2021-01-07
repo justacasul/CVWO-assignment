@@ -6,19 +6,13 @@ import CategoryPage from "./components/CategoryPage";
 import CategoriesPage from "./components/CategoriesPage";
 import TasksPage from "./components/TasksPage";
 import NewTask from "./components/NewTask";
+import NewCategory from "./components/NewCategory";
+import PageNotFound from "./components/PageNotFound";
 
 class App extends Component {
 
 
-  render(routes) {
-      const PageNotFound = () =>(
-          <div>
-              <h1 className="genericView">
-                  404, this page does not exist
-              </h1>
-          </div>
-      );
-
+  render() {
     return (
         <BrowserRouter>
             <div>
@@ -29,6 +23,7 @@ class App extends Component {
                     <Route path="/Tasks/null" component={PageNotFound} exact = {true}/>
                     <Route path="/Tasks/:id" component={TaskPage} exact = {true}/>
                     <Route path="/Categories" component={CategoriesPage} exact = {true}/>
+                    <Route path="/Categories/new" component={NewCategory} exact = {true}/>
                     <Route path="/Categories/null" component={PageNotFound} exact = {true}/>
                     <Route path="/Categories/:id" component={CategoryPage} exact = {true}/>
                     <Route component={PageNotFound}/>

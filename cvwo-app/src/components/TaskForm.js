@@ -47,28 +47,31 @@ class TaskForm extends React.Component {
 
     generateDue() {
         // DD MM present
+        let tempYear;
+        let tempHour;
+        let tempMinute;
         if(this.dateCheck()) {
             // YYYY present
             if(this.state.taskYear) {
                 // do nothing
+                tempYear = this.state.taskYear
             } else {
                 // set current year as default
-                this.state.taskYear = new Date().getFullYear()
-                console.log(this.state.taskYear)
+                tempYear = new Date().getFullYear()
             }
             if(this.timeCheck()) {
-                // do nothing
+                tempHour = this.state.taskHour
+                tempMinute = this.state.taskMinute
             } else {
                 // set default time
-                this.state.taskHour = 0
-                this.state.taskMinute = 0
+                tempHour = 0
+                tempMinute = 0
             }
-
-            return new Date(this.state.taskYear,
+            return new Date(tempYear,
                 this.state.taskMonth - 1,
                 this.state.taskDay,
-                this.state.taskHour,
-                this.state.taskMinute)
+                tempHour,
+                tempMinute)
 
         } else {
             // should be 1970 or something
@@ -77,11 +80,11 @@ class TaskForm extends React.Component {
     }
 
     dateCheck() {
-        return !!(this.state.taskDay && this.state.taskMonth);
+        return (this.state.taskDay && this.state.taskMonth);
     }
 
     timeCheck() {
-        return !!(this.state.taskHour && this.state.taskMinute);
+        return (this.state.taskHour && this.state.taskMinute);
     }
 
     render() {
@@ -96,7 +99,6 @@ class TaskForm extends React.Component {
                         name="taskName"
                         type="text"
                         maxLength="50"
-                        value={this.state.name}
                         onChange={this.handleInputChange} />
                 </label>
                 <br />
@@ -106,7 +108,6 @@ class TaskForm extends React.Component {
                         placeholder="Task details"
                         name="taskDetail"
                         maxLength="500"
-                        value={this.state.detail}
                         onChange={this.handleInputChange} />
                 </label>
                 <br />
@@ -119,7 +120,6 @@ class TaskForm extends React.Component {
                         type="number"
                         min="1"
                         max="31"
-                        value={this.state.day}
                         onChange={this.handleInputChange} />
                 </label>
                 /
@@ -130,7 +130,6 @@ class TaskForm extends React.Component {
                         type="number"
                         min="1"
                         max="12"
-                        value={this.state.month}
                         onChange={this.handleInputChange} />
                 </label>
                 /
@@ -141,7 +140,6 @@ class TaskForm extends React.Component {
                         type="number"
                         min="2020"
                         max="2100"
-                        value={this.state.year}
                         onChange={this.handleInputChange} />
                 </label>
                 <br/>
@@ -153,7 +151,6 @@ class TaskForm extends React.Component {
                         type="number"
                         min="0"
                         max="23"
-                        value={this.state.hour}
                         onChange={this.handleInputChange} />
                 </label>
                 :
@@ -164,7 +161,6 @@ class TaskForm extends React.Component {
                         type="number"
                         min="0"
                         max="59"
-                        value={this.state.minute}
                         onChange={this.handleInputChange} />
                 </label>
                 <br/>

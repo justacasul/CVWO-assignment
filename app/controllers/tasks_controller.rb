@@ -16,13 +16,24 @@ class TasksController < ApplicationController
 
   def update
     task = Task.find(params[:id])
-    task.update_attributes(task_param)
-    render json: task
+    if params[:category_id]
+      category = Category.find(params[:category_id])
+      category.tasks << task
+      head :no_content, status: :ok
+    else
+      task.update_attributes(task_param)
+      render json: task
+    end
   end
 
   def destroy
     task = Task.find(params[:id])
-    task.destroy
+    if params[:category_id]
+      category = Category.find(params[:category_id])
+      category.tasks.delete(task)
+    else
+      task.destroy
+    end
     head :no_content, status: :ok
   end
 

@@ -1,23 +1,22 @@
 import React, {Component} from "react";
 import TasksLink from "./TasksLink";
 import CategoriesLink from "./CategoriesLink";
-import TaskForm from "./TaskForm";
+import CategoryForm from "./CategoryForm";
 
-class NewTask extends Component {
+class NewCategory extends Component {
 
     render() {
         return (
             <div>
                 <h1 className="genericView">
-                    New task
+                    New category
                 </h1>
                 <TasksLink/>
                 <CategoriesLink/>
-                {/* yep this does the trick*/}
-                <TaskForm history={this.props.history}/>
+                <CategoryForm history={this.props.history}/>
             </div>
         );
     }
 }
 
-export default NewTask;
+export default NewCategory;

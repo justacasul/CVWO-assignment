@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import TasksLink from "./TasksLink";
 import CategoriesContainer from "./CategoriesContainer";
+import {Link} from "react-router-dom";
 
 class CategoriesPage extends Component {
 
@@ -12,6 +13,12 @@ class CategoriesPage extends Component {
                 </div>
 
                 <TasksLink />
+
+                <div className="create">
+                    <h3>
+                        <Link to="/Categories/new">New Category</Link>
+                    </h3>
+                </div>
 
                 <CategoriesContainer />
 
