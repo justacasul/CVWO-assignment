@@ -2,7 +2,7 @@
 
 Tasks main page
 
-
+Individual task page
 
 Categories main page
 
@@ -18,8 +18,4 @@ Figure out how to add drop-downs
 Figure out how to do forms
 
 
-
-# Not done:
-
-Individual task page
 
