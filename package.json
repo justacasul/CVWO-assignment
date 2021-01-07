@@ -22,8 +22,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd frontend install && yarn --cwd frontend build",
-    "deploy": "cp -a frontend/build/. public/",
+    "build": "yarn --cwd cvwo-app install && yarn --cwd cvwo-app build",
+    "deploy": "cp -a cvwo-app/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   },
   "repository": {
