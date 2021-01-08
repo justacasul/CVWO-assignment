@@ -9,3 +9,4 @@ https://stackoverflow.com/questions/50793148/how-to-redirect-to-a-new-page-from-
 https://stackoverflow.com/questions/5484560/javascript-if-else-statement-to-hide-and-show-div
 https://reactjs.org/docs/forms.html
 https://stackoverflow.com/questions/43837212/this-props-history-push-works-in-some-components-and-not-others
+https://medium.com/swlh/set-up-your-rails-and-react-apps-for-heroku-right-from-the-start-eed2bca83b6

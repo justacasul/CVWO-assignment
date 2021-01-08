@@ -1,40 +1,19 @@
 {
-  "name": "CVWO_assignment",
-  "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "turbolinks": "^5.2.0"
-  },
-  "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
-  },
-  "description": "Name: Liu Zhengdao",
-  "main": "babel.config.js",
+  "name": "CVWO-heroku-fresh",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd cvwo-app install && yarn --cwd cvwo-app build",
-    "deploy": "cp -a cvwo-app/build/. public/",
+    "build": "yarn --cwd frontend install && yarn --cwd frontend build",
+    "deploy": "cp -a frontend/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justacasul/CVWO-assignment.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/justacasul/CVWO-assignment/issues"
-  },
-  "homepage": "https://github.com/justacasul/CVWO-assignment#readme"
+  "license": "ISC"
 }
